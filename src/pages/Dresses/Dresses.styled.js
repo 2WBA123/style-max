@@ -1,6 +1,11 @@
 import styled from "styled-components";
 
-export const DressesWrapper = styled.div`
+export const DressContainer = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:baseline;
+`
+export const DressCardWrapper = styled.div`
     display:flex;
     margin-left: 825px;
     flex-wrap:wrap;
@@ -12,10 +17,10 @@ export const DressesHeadText = styled.div`
     font-weight: 400;
     line-height: 40px;
     letter-spacing: 0em;
-    text-align: right;
-    margin-bottom:20px;
+    // text-align: right;
+    // margin-bottom:1px;
 `;
-export const DressCardWrapper = styled.div`
+export const DressCard = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
