@@ -7,7 +7,7 @@ import Sale from './Sale/Sale'
 export default function Home() {
   return (
     // <Dresses />
-    <Sale />
-    // <Marketing/>
+    // <Sale />
+    <Marketing/>
   )
 }

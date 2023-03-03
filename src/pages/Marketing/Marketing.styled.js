@@ -13,17 +13,14 @@ export const Message = styled.div`
     justify-content:center;
     width:40%;
     gap:25px;
-    height:330px;
     padding:20px 50px;
 `;
 
 export const MessageImageWrapper = styled.div`
-    height:100%;    
+    // height:100%;    
 `;
 
 export const MessageImage = styled.img` 
-    width:100%;
-    height:330px;
 `;
 
 export const MessageHeading = styled.div`
@@ -52,8 +49,11 @@ export const BestSellersHeading = styled.div`
     font-weight: 700;
     line-height: 16px;
     letter-spacing: 0em;
-    margin-left: 286px;
-    margin-top: 63px
+    width:100%;
+    margin-left:auto;
+    margin-right:autol
+    // margin-left: 15%;
+    // margin-top: 3%;
 `;
 export const ShopNowButton = styled.button`
     width:264px;
@@ -76,9 +76,9 @@ export const CategoryCarouselHeading = styled.div`
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    margin-top:30px;
-    margin-bottom:30px;
-    margin-left:287px;
+    margin-top:2%;
+    margin-bottom:1%;
+    // margin-left:15%;
 `;
 
 export const BestSellerWrapper = styled.div`
@@ -143,7 +143,7 @@ export const ShopPriceWrapper = styled.div`
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-bottom:123px;
+    margin-bottom:6%;
 `;
 export const ShopPriceHeading = styled.div`
     font-family: KoHo;
@@ -152,8 +152,8 @@ export const ShopPriceHeading = styled.div`
     line-height: 16px;
     letter-spacing: 0em;
     text-align: center;
-    margin-bottom:10px;
-    margin-top: 115px;
+    margin-bottom:1%;
+    margin-top: 2%;
 `;
 export const ShopContentWrapper = styled.div`
     display:flex;
@@ -238,9 +238,12 @@ export const BrandHeading = styled.div`
 export const BrandsWrapper = styled.div`
     display:flex;
     background-color:#F1F1F1;
-    gap:124px;
+    // gap:124px;
     justify-content:center;
 `;
 export const BrandImage = styled.img`
+    width:100%;
+`;
+export const BrandImageWrapper = styled.img`
 
 `;

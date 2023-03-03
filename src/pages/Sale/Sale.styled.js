@@ -135,15 +135,15 @@ export const CategoryHeading = styled.div`
 
 export const CategoryImagesWrapper = styled.div`
     display:flex;
-    width:308px;
-    height:462px;
+    width:100%;
+    height:100%;
     justify-content:center;
     align-items:center;
 `;
 
 export const CategoryImages = styled.img`
-    width:308px;
-    max-height:462px;
+    max-width:100%;
+    max-height:100%;
     position:relative;
     border-radius:8px;
 `;
@@ -164,12 +164,12 @@ export const ImageHeading = styled.div`
   line-height: 24px;
   letter-spacing: 0em;
   text-align: left;
-  margin-bottom:60px;
+  margin-bottom:3%;
 `;
 export const ImageButton = styled.button`
     position: absolute;
-    width: 259px;
-    height: 41px;
+    width: 21%;
+    height: 9%;
     background: #535C3D;
     border-radius: 20px;
     color:white;
