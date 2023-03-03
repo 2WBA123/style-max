@@ -40,7 +40,6 @@ export const DressCardImage = styled.img`
 `;
 export const DressCardImageIcon = styled.img`
     position:absolute;
-    top:10px;
     top: 16px;
     right: 19px;
     height:24px;

@@ -32,6 +32,17 @@ export const CarouselButton = styled.button`
 
   transition: opacity 0.3s linear;
 `;
+export const CarouselButtonLeft = styled.button`
+  margin-top: ${({ marginBtnTop }) => marginBtnTop};
+  ${({ enabled }) =>
+    !enabled &&
+    css`
+      opacity: 0;
+      pointer-events: none;
+    `}
+  
+  transition: opacity 0.3s linear;
+`;
 export const CarouselMiniButton = styled.button`
   box-sizing: border-box;
   margin-top: ${({ marginBtnTop }) => marginBtnTop};

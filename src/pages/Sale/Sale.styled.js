@@ -2,8 +2,9 @@ import styled from "styled-components";
 
 export const ShopNowWrapper = styled.div`
     display:flex;
-    width:100%;
-    justify-content: space-between;
+    width: 90%;
+    margin-left: 68px;
+    justify-content: center;
 `;
 
 export const ShopNow = styled.div`
@@ -17,16 +18,15 @@ export const ShopNow = styled.div`
 
 export const ShopNowImageWrapper = styled.div`
     width:784px;
-    height:589px;
-    
+    height:580px;
 `;
 
 
 
 export const ShopNowImage = styled.img` 
-    width:784px;
-    height:589px;
-    
+    width:100%;
+    height:100%;
+    border-radius:8px;
 `;
 
 export const ShopNowHeading = styled.div`
@@ -58,7 +58,9 @@ export const WinterWrapper = styled.div`
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    width:100%;
+    width: 80%;
+    margin-left: 169px;
+    margin-bottom:50px;
     height:594px;
     background-color: #A91C12;
 `;
@@ -116,6 +118,9 @@ export const WinterButtonText = styled.div`
 export const CategoryWrapper = styled.div`
     display:flex;
     flex-direction:column;
+    width: 80%;
+    margin-left: 167px;
+    margin-bottom:20px;
 `;
 
 export const CategoryHeading = styled.div`
@@ -125,7 +130,7 @@ export const CategoryHeading = styled.div`
     line-height: 16px;
     letter-spacing: 0em;
     text-align: left;
-    margin:39px 0 24px 41px;
+    margin: 0px 0 16px 1px;
 `;
 
 export const CategoryImagesWrapper = styled.div`
@@ -146,10 +151,9 @@ export const CategoryImages = styled.img`
 
 export const AllImagesWrapper = styled.div`
     display:flex;
-    padding:24px 0px;
-    width:100%;
     gap:30px;
     justify-content:center;
+    height:100%
 `;
 export const ImageHeading = styled.div`
   position:absolute;
@@ -176,8 +180,8 @@ export const CategoryBottomWrapper = styled.div`
     flex-direction:row-reverse;
     align-items:center;
     gap:19px;
-    margin-right:26px;
-    margin-bottom:60px;
+    margin-right:-4px;
+    margin-bottom:45px;
 `;
 export const CategoryBottomText = styled.div`
     font-family: Jost;
@@ -207,11 +211,12 @@ export const CategoryBottomButtonText = styled.div`
 `;
 
 export const BrandsSectionWrapper = styled.div`
-    width:100%;
-    gap:99px;
+    width:95%;
+    gap:34px;
     display:flex;
     justify-content:center;
-    margin-bottom:60px;
+    margin-bottom:45px;
+    margin-left: 117px;
 `;
 
 export const BrandsTextWrapper = styled.div`
@@ -291,8 +296,10 @@ export const PercentageText = styled.div`
 `;
 export const ForImagesContainer = styled.div`
     display:flex;
-    width:100%;
-    justify-content:space-between;
+    flex-direction:column;
+    width:86%;
+    margin-left:156px; 
+    margin-bottom:30px;     
     padding:10px
 `;
 export const ForImagesWrapper = styled.div`
@@ -300,21 +307,28 @@ export const ForImagesWrapper = styled.div`
     justify-content:center;
     align-items:center;
 `;
+export const ImagesFlexWrapper = styled.div`
+    display:flex;
+    width:94%;
+    height:100%;
+    gap:20px;
+`;
 export const ForImage = styled.img`
-    width:632px;
-    height:846px;
+    width:660px;
+    height:800px;
     border-radius:8px;
 `;
 export const StyleMaxContainer = styled.div`
     display:flex;
+    align-items: center;
     width:100%;
     flex-direction:column;
     padding:20px 40px;
 `;
 export const StyleMaxImagesContainer = styled.div`
     display:flex;
+    justify-content:center;
     width:100%;
-    justify-content:space-between;
     padding:20px 20px;
 `;
 export const StyleMaxImageWrapper = styled.div`
