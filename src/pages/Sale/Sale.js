@@ -1,5 +1,5 @@
 import React from 'react'
-import { AllImagesWrapper, BrandCard, BrandCardFrame, BrandCardsWrapper, BrandsButton, BrandsSectionWrapper, BrandsTextHeading, BrandsTextSubHeading, BrandsTextWrapper, CategoryBottomButton, CategoryBottomButtonText, CategoryBottomButtonWrapper, CategoryBottomText, CategoryBottomWrapper, CategoryHeading, CategoryImages, CategoryImagesWrapper, CategoryWrapper, ForImage, ForImagesContainer, ForImagesWrapper, ImageButton, ImageHeading, LastChanceText, PercentageText, SaleText, ShopNow, ShopNowButton, ShopNowHeading, ShopNowImage, ShopNowImageWrapper, ShopNowText, ShopNowWrapper, StyleImageBody, StyleImageBodyHeading, StyleImageBodyText, StyleMaxContainer, StyleMaxHeading, StyleMaxImages, StyleMaxImagesContainer, StyleMaxImagesWrapper, StyleMaxImageWrapper, WinterButton, WinterButtonText, WinterButtonWrapper, WinterText, WinterWrapper } from './Sale.styled'
+import { AllImagesWrapper, BrandCard, BrandCardFrame, BrandCardsWrapper, BrandsButton, BrandsSectionWrapper, BrandsTextHeading, BrandsTextSubHeading, BrandsTextWrapper, CategoryBottomButton, CategoryBottomButtonText, CategoryBottomButtonWrapper, CategoryBottomText, CategoryBottomWrapper, CategoryHeading, CategoryImages, CategoryImagesWrapper, CategoryWrapper, ForImage, ForImagesContainer, ForImagesWrapper, ImageButton, ImageHeading, ImagesFlexWrapper, LastChanceText, PercentageText, SaleText, ShopNow, ShopNowButton, ShopNowHeading, ShopNowImage, ShopNowImageWrapper, ShopNowText, ShopNowWrapper, StyleImageBody, StyleImageBodyHeading, StyleImageBodyText, StyleMaxContainer, StyleMaxHeading, StyleMaxImages, StyleMaxImagesContainer, StyleMaxImagesWrapper, StyleMaxImageWrapper, WinterButton, WinterButtonText, WinterButtonWrapper, WinterText, WinterWrapper } from './Sale.styled'
 
 function Sale() {
   return (
@@ -12,9 +12,10 @@ function Sale() {
           <ShopNowButton>Shop Now</ShopNowButton>
         </ShopNow>
         <ShopNowImageWrapper>
-          <ShopNowImage src='/shopnowimage.svg' />
+          <ShopNowImage src='/shopnowimage.svg'/>
         </ShopNowImageWrapper>
       </ShopNowWrapper>
+
       <WinterWrapper>
         <WinterText>WINTER</WinterText>
         <SaleText>SALE</SaleText>
@@ -101,16 +102,18 @@ function Sale() {
             <LastChanceText>LAST CHANCE</LastChanceText>
             <PercentageText>70% TO 80%</PercentageText>
             <ImageButton>SEE COLLECTION</ImageButton>
-          </CategoryImagesWrapper>
+          </CategoryImagesWrapper>  
         </AllImagesWrapper>
-          <CategoryHeading>
-          looking for gifts for her or him...
-          </CategoryHeading>
       </CategoryWrapper>
 
       <ForImagesContainer>
+        <CategoryHeading>
+          LOOKING FOR MORE GIFTS FOR HER OR HIM...
+        </CategoryHeading>
+        <ImagesFlexWrapper>
         <ForImagesWrapper><ForImage src='/forher.svg'/><ImageHeading>FOR HER</ImageHeading><ImageButton>SEE COLLECTION</ImageButton></ForImagesWrapper>
         <ForImagesWrapper><ForImage src='/forhim.svg'/><ImageHeading>FOR HIM</ImageHeading><ImageButton>SEE COLLECTION</ImageButton></ForImagesWrapper>
+        </ImagesFlexWrapper>
       </ForImagesContainer>
 
       <StyleMaxContainer>
