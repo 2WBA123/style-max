@@ -4,37 +4,53 @@ export const MessageWrapper = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
+  flex-wrap: wrap;
+  @media (max-width: 1024px) {
+    flex-direction: column-reverse;
+  }
 `;
 
 export const Message = styled.div`
-
-    background-color:#F1F1F1;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    width:40%;
-    gap:25px;
-    padding:20px 50px;
+  align-items: baseline;
+  background-color: #F1F1F1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  gap: 25px;
+  padding: 20px 50px;
+  @media (max-width: 1024px) {
+    align-items: baseline;
+    width: 100%;
+  }
 `;
 
 export const MessageImageWrapper = styled.div`
-    // height:100%;    
+  // height:100%;    
 `;
 
-export const MessageImage = styled.img` 
+export const MessageImage = styled.img`
+  width: 50%;
+  height: 100%;
+  image-rendering: auto;
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
 `;
 
 export const MessageHeading = styled.div`
-  width: 560px;
+  width: 50%;
   font-family: Jost;
   font-weight: 700;
-  font-size: 48px;
+  font-size: xx-large;
   text-align: left;
-  margin-top: 20px;
+  @media (max-width: 1024px) {
+    font-size: large;
+    width: 100%;
+  }
 `;
 
 export const MessageText = styled.div`
-  width: 680px;
   font-family: Jost;
   font-weight: 400;
   font-size: 24px;
@@ -46,16 +62,16 @@ export const BestSellersWrapper = styled.div`
 `;
 export const BestSellersHeading = styled.div`
 
-    font-family: KoHo;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    width:100%;
-    margin-left:auto;
-    margin-right:autol
-    // margin-left: 15%;
-    // margin-top: 3%;
+  font-family: KoHo;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  width: 100%;
+  margin-left: auto;
+  margin-right: autol
+  // margin-left: 15%;
+  // margin-top: 3%;
 
 `;
 export const ShopNowButton = styled.button`
@@ -73,15 +89,15 @@ export const CategoryCarouselSection = styled.div`
   align-items: flex-start;
 `;
 export const CategoryCarouselHeading = styled.div`
-    font-family: KoHo;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: left;
-    margin-top:2%;
-    margin-bottom:1%;
-    // margin-left:15%;
+  font-family: KoHo;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  // margin-left:15%;
 
 `;
 
@@ -90,6 +106,7 @@ export const BestSellerWrapper = styled.div`
   flex-direction: column;
 `;
 export const BestCardWrapper = styled.div`
+  min-width: 30%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,20 +162,20 @@ export const BestCardTypeOldPrice = styled.s`
 
 export const ShopPriceWrapper = styled.div`
 
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    margin-bottom:6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6%;
 `;
 export const ShopPriceHeading = styled.div`
-    font-family: KoHo;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-align: center;
-    margin-bottom:1%;
-    margin-top: 2%;
+  font-family: KoHo;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-bottom: 1%;
+  margin-top: 2%;
 
 `;
 export const ShopContentWrapper = styled.div`
@@ -269,20 +286,20 @@ export const BrandHeading = styled.div`
 `;
 export const BrandsWrapper = styled.div`
 
-    display:flex;
-    background-color:#F1F1F1;
-    // gap:124px;
-    justify-content:center;
+  display: flex;
+  background-color: #F1F1F1;
+  // gap:124px;
+  justify-content: center;
 `;
 export const BrandImage = styled.img`
-    width:100%;
+  width: 100%;
 `;
 export const BrandImageWrapper = styled.img`
 
 `;
-export const BreadcumbContainer=styled.div`
+export const BreadcumbContainer = styled.div`
 `
-export const BreadCumbItem=styled.span`
+export const BreadCumbItem = styled.span`
   text-transform: uppercase;
   font-style: normal;
   color: #0F172A;
@@ -294,7 +311,7 @@ export const BreadCumbItem=styled.span`
     cursor: auto;
   }
 `
-export const BreadCumbItemLast=styled.span`
+export const BreadCumbItemLast = styled.span`
   text-transform: uppercase;
   font-style: normal;
   color: #0F172A;

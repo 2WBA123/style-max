@@ -1,5 +1,7 @@
-import Dresses from './Dresses/Dresses'
+// import Dresses from './Dresses/Dresses'
 
+
+import Marketing from "@/pages/Marketing/Marketing";
 
 export default function Home() {
   return (
