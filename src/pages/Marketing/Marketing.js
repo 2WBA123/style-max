@@ -6,7 +6,7 @@ import { AllImagesContainer, AllImagesHeading, BestCardHeading, BestCardPriceWra
 
 function Marketing() {
   return (
-    <div style={{display:"flex",width:"100%",flexDirection:"column",justifyContent:"center"}}>
+    <div style={{display:"flex",gap:"25px",width:"80%",margin:"auto",flexDirection:"column"}}>
       <CategoryCarouselSection>
       <CategoryCarouselHeading>SHOP BY CATEGORY</CategoryCarouselHeading>
         <Carousel >
@@ -34,7 +34,7 @@ function Marketing() {
       </CategoryCarouselSection>
 
 
-        <MessageWrapper>
+      <MessageWrapper>
         <Message>
           <MessageHeading>MARKETING MESSAGE</MessageHeading>
           <MessageText>We can write anything here related to marketing or use this space for branding some brands.</MessageText>
@@ -43,11 +43,11 @@ function Marketing() {
         <MessageImageWrapper>
           <MessageImage src='/message.svg' />
         </MessageImageWrapper>
-        </MessageWrapper>
+      </MessageWrapper>
 
       <BestSellersWrapper>
         <BestSellersHeading>SHOP BESTSELLERS</BestSellersHeading>
-        <Carousel >
+        <Carousel>
           <BestCardWrapper>
             <BestImage src='/khakipants.svg' />
             <BestCardHeading>ADIDAS</BestCardHeading>
@@ -89,7 +89,7 @@ function Marketing() {
             </BestCardPriceWrapper>    
           </BestCardWrapper>
         </Carousel>
-        </BestSellersWrapper>
+      </BestSellersWrapper>
 
 
         <ShopPriceWrapper>
@@ -186,15 +186,15 @@ function Marketing() {
 
         <BrandContainer>
         <BrandHeading>SHOP BY BRAND</BrandHeading>
+        <BrandsWrapper>
         <Carousel>
-          <BrandsWrapper>
            <BrandImage src='/zaraa.svg'/>
            <BrandImage src='/adidass.svg'/>
            <BrandImage src='/diorr.svg'/>
            <BrandImage src='/chanell.svg'/>
            <BrandImage src='/mangoo.svg'/>
-          </BrandsWrapper>
         </Carousel>
+        </BrandsWrapper>
         </BrandContainer>
     </div>
   )

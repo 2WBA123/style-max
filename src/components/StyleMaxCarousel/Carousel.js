@@ -57,9 +57,10 @@ export const Carousel = ({
         maxWidth: "100%",
         minWidth: "100%",
         gap: "45px",
+        margin:"auto",
         flexDirection: "row",
-        justifyContent: "center",
-        marginBottom:"55px",
+        
+        // marginBottom:"55px",
       }}
     >
       {mini ? (

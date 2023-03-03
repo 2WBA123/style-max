@@ -7,23 +7,21 @@ export const MessageWrapper = styled.div`
 `;
 
 export const Message = styled.div`
-  background-color: #F1F1F1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-  gap: 25px;
-  height: 330px;
-  padding: 20px 50px;
+
+    background-color:#F1F1F1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:40%;
+    gap:25px;
+    padding:20px 50px;
 `;
 
 export const MessageImageWrapper = styled.div`
-  height: 100%;
+    // height:100%;    
 `;
 
-export const MessageImage = styled.img`
-  width: 100%;
-  height: 330px;
+export const MessageImage = styled.img` 
 `;
 
 export const MessageHeading = styled.div`
@@ -47,13 +45,18 @@ export const BestSellersWrapper = styled.div`
   align-items: flex-start;
 `;
 export const BestSellersHeading = styled.div`
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  margin-left: 286px;
-  margin-top: 63px
+
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    width:100%;
+    margin-left:auto;
+    margin-right:autol
+    // margin-left: 15%;
+    // margin-top: 3%;
+
 `;
 export const ShopNowButton = styled.button`
   width: 264px;
@@ -70,15 +73,16 @@ export const CategoryCarouselSection = styled.div`
   align-items: flex-start;
 `;
 export const CategoryCarouselHeading = styled.div`
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 287px;
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:2%;
+    margin-bottom:1%;
+    // margin-left:15%;
+
 `;
 
 export const BestSellerWrapper = styled.div`
@@ -140,25 +144,22 @@ export const BestCardTypeOldPrice = styled.s`
 
 
 export const ShopPriceWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 123px;
-`;
-export const DressFilterWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-bottom:6%;
 `;
 export const ShopPriceHeading = styled.div`
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 115px;
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom:1%;
+    margin-top: 2%;
+
 `;
 export const ShopContentWrapper = styled.div`
   display: flex;
@@ -267,12 +268,16 @@ export const BrandHeading = styled.div`
   margin-left: 290px;
 `;
 export const BrandsWrapper = styled.div`
-  display: flex;
-  background-color: #F1F1F1;
-  gap: 124px;
-  justify-content: center;
+
+    display:flex;
+    background-color:#F1F1F1;
+    // gap:124px;
+    justify-content:center;
 `;
 export const BrandImage = styled.img`
+    width:100%;
+`;
+export const BrandImageWrapper = styled.img`
 
 `;
 export const BreadcumbContainer=styled.div`
