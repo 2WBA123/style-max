@@ -173,7 +173,7 @@ export const ImageButton = styled.button`
     background: #535C3D;
     border-radius: 20px;
     color:white;
-    margin-top:194px;
+    margin-top:13%;
 `;
 export const CategoryBottomWrapper = styled.div`
     display:flex;

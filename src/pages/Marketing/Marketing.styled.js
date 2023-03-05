@@ -11,35 +11,29 @@ export const MessageWrapper = styled.div`
 `;
 
 export const Message = styled.div`
-  align-items: baseline;
-  background-color: #F1F1F1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 40%;
-  gap: 25px;
-  padding: 20px 50px;
-  @media (max-width: 1024px) {
-    align-items: baseline;
-    width: 100%;
-  }
+
+
+    background-color:#F1F1F1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    width:60%;
+    gap:25px;
+    padding:20px 50px;
+    border-radius:8px;
 `;
 
 export const MessageImageWrapper = styled.div`
-  // height:100%;    
+    width:auto;    
+    min-height: 100%;
 `;
 
-export const MessageImage = styled.img`
-  width: 50%;
-  height: 100%;
-  image-rendering: auto;
-  @media (max-width: 1024px) {
-    width: 100%;
-  }
+export const MessageImage = styled.img` 
+    min-height:100%;
+
 `;
 
 export const MessageHeading = styled.div`
-  width: 50%;
   font-family: Jost;
   font-weight: 700;
   font-size: xx-large;
@@ -51,6 +45,8 @@ export const MessageHeading = styled.div`
 `;
 
 export const MessageText = styled.div`
+  
+  width: 100%;
   font-family: Jost;
   font-weight: 400;
   font-size: 24px;
@@ -62,16 +58,15 @@ export const BestSellersWrapper = styled.div`
 `;
 export const BestSellersHeading = styled.div`
 
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  width: 100%;
-  margin-left: auto;
-  margin-right: autol
-  // margin-left: 15%;
-  // margin-top: 3%;
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:1rem;
 
 `;
 export const ShopNowButton = styled.button`
@@ -89,15 +84,17 @@ export const CategoryCarouselSection = styled.div`
   align-items: flex-start;
 `;
 export const CategoryCarouselHeading = styled.div`
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 2%;
-  margin-bottom: 1%;
-  // margin-left:15%;
+
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top:2%;
+    margin-bottom:1rem;
+    // margin-left:4%;
+
 
 `;
 
@@ -110,10 +107,10 @@ export const BestCardWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-width:20%;
 `;
 export const BestImage = styled.img`
-  width: 308px;
-  height: 466px;
+  
 `;
 export const BestCardHeading = styled.div`
   font-family: Jost;
@@ -121,6 +118,7 @@ export const BestCardHeading = styled.div`
   font-weight: 700;
   line-height: 40px;
   letter-spacing: 0em;
+  margin-top:0.5rem;
   // text-align: center;
 `;
 export const BestCardTypeText = styled.div`
@@ -162,20 +160,23 @@ export const BestCardTypeOldPrice = styled.s`
 
 export const ShopPriceWrapper = styled.div`
 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 6%;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:6%;
+    margin-bottom:2%;
 `;
 export const ShopPriceHeading = styled.div`
-  font-family: KoHo;
-  font-size: 22px;
-  font-weight: 700;
-  line-height: 16px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin-bottom: 1%;
-  margin-top: 2%;
+    font-family: KoHo;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    // margin-bottom:1%;
+    margin-top: 2%;
+
 
 `;
 export const ShopContentWrapper = styled.div`
@@ -256,40 +257,37 @@ export const AllImagesHeading = styled.div`
   font-family: KoHo;
   font-size: 22px;
   font-weight: 700;
-  line-height: 16px;
+//   line-height: 16px;
   letter-spacing: 0em;
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  margin-left: 290px;
+//   text-align: left;
+//   margin-top: 40px;
+  margin-bottom: 1rem;
+//   margin-left: 290px;
 `;
 export const AllImagesContainer = styled.div`
   display: flex;
   flex-direction: column;
+//   margin-top:1%;
 `;
 
 export const BrandContainer = styled.div`
-  display;
-  flex;
+  display;flex;
   flex-direction: column;
+  margin-bottom:4%
 `;
 export const BrandHeading = styled.div`
   font-family: KoHo;
   font-size: 22px;
   font-weight: 700;
   line-height: 16px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin-top: 40px;
-  margin-bottom: 10px;
-  margin-left: 290px;
+  margin-bottom: 1rem;
 `;
 export const BrandsWrapper = styled.div`
 
-  display: flex;
-  background-color: #F1F1F1;
-  // gap:124px;
-  justify-content: center;
+    display:flex;
+    background-color:#F1F1F1;
+    // gap:124px;
+    justify-content:center;
 `;
 export const BrandImage = styled.img`
   width: 100%;

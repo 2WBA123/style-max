@@ -40,53 +40,35 @@ import {
 } from './Marketing.styled'
 
 function Marketing() {
-    return (
-        <div style={{display: "flex", gap: "25px", width: "90%", margin: "auto", flexDirection: "column"}}>
-            <CategoryCarouselSection>
-                <CategoryCarouselHeading>SHOP BY CATEGORY</CategoryCarouselHeading>
-                <Carousel>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/ladies.svg'/>
-                        <ImageHeading>CLOTHING</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/channelbag.svg'/>
-                        <ImageHeading>BAGS</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/footwear.svg'/>
-                        <ImageHeading>FOOTWEAR</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/accessories.svg'/>
-                        <ImageHeading>ACCESSORIES</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/ladies.svg'/>
-                        <ImageHeading>CLOTHING</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/ladies.svg'/>
-                        <ImageHeading>CLOTHING</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/ladies.svg'/>
-                        <ImageHeading>CLOTHING</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/ladies.svg'/>
-                        <ImageHeading>CLOTHING</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                </Carousel>
-            </CategoryCarouselSection>
+
+  return (
+    <div style={{display:"flex",gap:"60px",width:"80%",margin:"auto",flexDirection:"column"}}>
+
+      <CategoryCarouselSection>
+      <CategoryCarouselHeading>SHOP BY CATEGORY</CategoryCarouselHeading>
+        <Carousel >
+          <CategoryImagesWrapper>
+            <CategoryImages src='/ladies.svg'/>
+            <ImageHeading>CLOTHING</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/channelbag.svg'/>
+            <ImageHeading>BAGS</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/footwear.svg'/>
+            <ImageHeading>FOOTWEAR</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/accessories.svg'/>
+            <ImageHeading>ACCESSORIES</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+        </Carousel>
+      </CategoryCarouselSection>
 
 
             <MessageWrapper>
@@ -146,98 +128,128 @@ function Marketing() {
             </BestSellersWrapper>
 
 
-            <ShopPriceWrapper>
-                <ShopPriceHeading>SHOP BY PRICE</ShopPriceHeading>
-                <ShopContentWrapper>
-                    <SelectWrapper>
-                        <SelectText>Shop</SelectText>
-                        <PriceSelect>
-                            <SelectOption selected>Dresses</SelectOption>
-                        </PriceSelect>
-                    </SelectWrapper>
-                    <SelectWrapper>
-                        <SelectText>Under</SelectText>
-                        <PriceSelect>
-                            <SelectOption selected>$80</SelectOption>
-                        </PriceSelect>
-                    </SelectWrapper>
-                    <ShopPriceButton><ButtonText>Shop Now</ButtonText><ShopPriceButtonIcon
-                        src='IconStrokeRight.svg'/></ShopPriceButton>
-                </ShopContentWrapper>
-            </ShopPriceWrapper>
 
+      <ShopPriceWrapper>
+          <ShopPriceHeading>SHOP BY PRICE</ShopPriceHeading>
+          <ShopContentWrapper>
+           <SelectWrapper>
+            <SelectText>Shop</SelectText>
+            <PriceSelect>
+              <SelectOption selected>Dresses</SelectOption>
+            </PriceSelect>
+           </SelectWrapper>
+           <SelectWrapper>
+            <SelectText>Under</SelectText>
+            <PriceSelect>
+              <SelectOption selected>$80</SelectOption>
+            </PriceSelect>
+           </SelectWrapper>
+           <ShopPriceButton><ButtonText>Shop Now</ButtonText><ShopPriceButtonIcon src='IconStrokeRight.svg'/></ShopPriceButton>
+          </ShopContentWrapper>
+      </ShopPriceWrapper>
 
-            <BestSellersWrapper>
-                <BestSellersHeading>NEW ARRIVALS</BestSellersHeading>
-                <Carousel>
-                    <BestCardWrapper>
-                        <BestImage src='/khakipants.svg'/>
-                        <BestCardHeading>ADIDAS</BestCardHeading>
-                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-                        <BestCardSizeText>Size: XL</BestCardSizeText>
-                        <BestCardPriceWrapper>
-                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
-                        </BestCardPriceWrapper>
-                    </BestCardWrapper>
-                    <BestCardWrapper>
-                        <BestImage src='/jacket.svg'/>
-                        <BestCardHeading>ADIDAS</BestCardHeading>
-                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-                        <BestCardSizeText>Size: XL</BestCardSizeText>
-                        <BestCardPriceWrapper>
-                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
-                        </BestCardPriceWrapper>
-                    </BestCardWrapper>
-                    <BestCardWrapper>
-                        <BestImage src='/shirtpant.svg'/>
-                        <BestCardHeading>ADIDAS</BestCardHeading>
-                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-                        <BestCardSizeText>Size: XL</BestCardSizeText>
-                        <BestCardPriceWrapper>
-                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
-                        </BestCardPriceWrapper>
-                    </BestCardWrapper>
-                    <BestCardWrapper>
-                        <BestImage src='/jacket.svg'/>
-                        <BestCardHeading>ADIDAS</BestCardHeading>
-                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-                        <BestCardSizeText>Size: XL</BestCardSizeText>
-                        <BestCardPriceWrapper>
-                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
-                        </BestCardPriceWrapper>
-                    </BestCardWrapper>
-                </Carousel>
-            </BestSellersWrapper>
+      <BestSellersWrapper>
+        <BestSellersHeading>NEW ARRIVALS</BestSellersHeading>
+        <Carousel >
+          <BestCardWrapper>
+            <BestImage src='/khakipants.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/shirtpant.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>  
+        </Carousel>
+      </BestSellersWrapper>
 
-            <AllImagesContainer>
-                <AllImagesHeading>SHOP BY STYLE</AllImagesHeading>
-                <AllImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/nightout.svg'/>
-                        <ImageHeading>NIGHT OUT</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/office.svg'/>
-                        <ImageHeading>OFFICE</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/modestfashion.svg'/>
-                        <ImageHeading>MODEST FASHION</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                    <CategoryImagesWrapper>
-                        <CategoryImages src='/cultural.svg'/>
-                        <ImageHeading>CULTURAL</ImageHeading>
-                        <ImageButton>SEE COLLECTION</ImageButton>
-                    </CategoryImagesWrapper>
-                </AllImagesWrapper>
-            </AllImagesContainer>
+        <AllImagesContainer>
+        <AllImagesHeading>SHOP BY STYLE</AllImagesHeading>
+        <AllImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/nightout.svg'/>
+            <ImageHeading>NIGHT OUT</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/office.svg'/>
+            <ImageHeading>OFFICE</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/modestfashion.svg'/>
+            <ImageHeading>MODEST FASHION</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper>
+          <CategoryImagesWrapper>
+            <CategoryImages src='/cultural.svg'/>
+            <ImageHeading>CULTURAL</ImageHeading>
+            <ImageButton>SEE COLLECTION</ImageButton>
+          </CategoryImagesWrapper> 
+        </AllImagesWrapper>
+        </AllImagesContainer>
+
 
             <BrandContainer>
                 <BrandHeading>SHOP BY BRAND</BrandHeading>
