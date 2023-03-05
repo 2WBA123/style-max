@@ -135,14 +135,14 @@ export const CategoryHeading = styled.div`
 
 export const CategoryImagesWrapper = styled.div`
     display:flex;
-    width:100%;
+    min-width:20%;
     height:100%;
     justify-content:center;
     align-items:center;
 `;
 
 export const CategoryImages = styled.img`
-    max-width:100%;
+    min-width:100%;
     max-height:100%;
     position:relative;
     border-radius:8px;

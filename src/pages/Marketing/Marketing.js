@@ -1,10 +1,46 @@
-import { Carousel } from '@/components/StyleMaxCarousel'
+import {Carousel} from '@/components/StyleMaxCarousel'
 import React from 'react'
-import { DressCardTypeNewPrice, DressCardTypeOldPrice } from '../Dresses/Dresses.styled'
-import { AllImagesWrapper, CategoryImages, CategoryImagesWrapper, ImageButton, ImageHeading } from '../Sale/Sale.styled'
-import { AllImagesContainer, AllImagesHeading, BestCardHeading, BestCardPriceWrapper, BestCardSizeText, BestCardTypeNewPrice, BestCardTypeOldPrice, BestCardTypeText, BestCardWrapper, BestImage, BestImageFrame, BestImageIcon, BestImageWrapper, BestSellersHeading, BestSellersWrapper, BrandContainer, BrandHeading, BrandImage, BrandsWrapper, ButtonText, CategoryCarouselHeading, CategoryCarouselSection, Message, MessageHeading, MessageImage, MessageImageWrapper, MessageText, MessageWrapper, PriceSelect, SelectOption, SelectText, SelectWrapper, ShopContentWrapper, ShopNowButton, ShopPriceButton, ShopPriceButtonIcon, ShopPriceHeading, ShopPriceWrapper } from './Marketing.styled'
+import {AllImagesWrapper, CategoryImages, CategoryImagesWrapper, ImageButton, ImageHeading} from '../Sale/Sale.styled'
+import {
+    AllImagesContainer,
+    AllImagesHeading,
+    BestCardHeading,
+    BestCardPriceWrapper,
+    BestCardSizeText,
+    BestCardTypeNewPrice,
+    BestCardTypeOldPrice,
+    BestCardTypeText,
+    BestCardWrapper,
+    BestImage,
+    BestSellersHeading,
+    BestSellersWrapper,
+    BrandContainer,
+    BrandHeading,
+    BrandImage,
+    BrandsWrapper,
+    ButtonText,
+    CategoryCarouselHeading,
+    CategoryCarouselSection,
+    Message,
+    MessageHeading,
+    MessageImage,
+    MessageImageWrapper,
+    MessageText,
+    MessageWrapper,
+    PriceSelect,
+    SelectOption,
+    SelectText,
+    SelectWrapper,
+    ShopContentWrapper,
+    ShopNowButton,
+    ShopPriceButton,
+    ShopPriceButtonIcon,
+    ShopPriceHeading,
+    ShopPriceWrapper
+} from './Marketing.styled'
 
 function Marketing() {
+
   return (
     <div style={{display:"flex",gap:"60px",width:"80%",margin:"auto",flexDirection:"column"}}>
 
@@ -35,62 +71,62 @@ function Marketing() {
       </CategoryCarouselSection>
 
 
-      <MessageWrapper>
-        <Message>
-          <MessageHeading>MARKETING MESSAGE</MessageHeading>
-          <MessageText>We can write anything here related to marketing or use this space for branding some brands.</MessageText>
-          <ShopNowButton>Shop Now</ShopNowButton>
-        </Message>
-        <MessageImageWrapper>
-          <MessageImage src='/message.svg' />
-        </MessageImageWrapper>
-      </MessageWrapper>
+            <MessageWrapper>
+                <Message>
+                    <MessageHeading>MARKETING MESSAGE</MessageHeading>
+                    <MessageText>We can write anything here related to marketing or use this space for branding some
+                        brands.</MessageText>
+                    <ShopNowButton>Shop Now</ShopNowButton>
+                </Message>
+                    <MessageImage src='/message.svg'/>
+            </MessageWrapper>
 
-      <BestSellersWrapper>
-        <BestSellersHeading>SHOP BESTSELLERS</BestSellersHeading>
-        <Carousel>
-          <BestCardWrapper>
-            <BestImage src='/khakipants.svg' />
-            <BestCardHeading>ADIDAS</BestCardHeading>
-            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-            <BestCardSizeText>Size: XL</BestCardSizeText>
-            <BestCardPriceWrapper>
-              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
-            </BestCardPriceWrapper>    
-          </BestCardWrapper>
-          <BestCardWrapper>
-            <BestImage src='/jacket.svg' />
-            <BestCardHeading>ADIDAS</BestCardHeading>
-            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-            <BestCardSizeText>Size: XL</BestCardSizeText>
-            <BestCardPriceWrapper>
-              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
-            </BestCardPriceWrapper>    
-          </BestCardWrapper>
-          <BestCardWrapper>
-            <BestImage src='/shirtpant.svg' />
-            <BestCardHeading>ADIDAS</BestCardHeading>
-            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-            <BestCardSizeText>Size: XL</BestCardSizeText>
-            <BestCardPriceWrapper>
-              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
-            </BestCardPriceWrapper>    
-          </BestCardWrapper>
-          <BestCardWrapper>
-            <BestImage src='/jacket.svg' />
-            <BestCardHeading>ADIDAS</BestCardHeading>
-            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
-            <BestCardSizeText>Size: XL</BestCardSizeText>
-            <BestCardPriceWrapper>
-              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
-              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
-            </BestCardPriceWrapper>    
-          </BestCardWrapper>
-        </Carousel>
-      </BestSellersWrapper>
+            <BestSellersWrapper>
+                <BestSellersHeading>SHOP BESTSELLERS</BestSellersHeading>
+                <Carousel>
+                    <BestCardWrapper>
+                        <BestImage src='/khakipants.svg'/>
+                        <BestCardHeading>ADIDAS</BestCardHeading>
+                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+                        <BestCardSizeText>Size: XL</BestCardSizeText>
+                        <BestCardPriceWrapper>
+                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
+                        </BestCardPriceWrapper>
+                    </BestCardWrapper>
+                    <BestCardWrapper>
+                        <BestImage src='/jacket.svg'/>
+                        <BestCardHeading>ADIDAS</BestCardHeading>
+                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+                        <BestCardSizeText>Size: XL</BestCardSizeText>
+                        <BestCardPriceWrapper>
+                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
+                        </BestCardPriceWrapper>
+                    </BestCardWrapper>
+                    <BestCardWrapper>
+                        <BestImage src='/shirtpant.svg'/>
+                        <BestCardHeading>ADIDAS</BestCardHeading>
+                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+                        <BestCardSizeText>Size: XL</BestCardSizeText>
+                        <BestCardPriceWrapper>
+                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
+                        </BestCardPriceWrapper>
+                    </BestCardWrapper>
+                    <BestCardWrapper>
+                        <BestImage src='/jacket.svg'/>
+                        <BestCardHeading>ADIDAS</BestCardHeading>
+                        <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+                        <BestCardSizeText>Size: XL</BestCardSizeText>
+                        <BestCardPriceWrapper>
+                            <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+                            <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>
+                        </BestCardPriceWrapper>
+                    </BestCardWrapper>
+                </Carousel>
+            </BestSellersWrapper>
+
 
 
       <ShopPriceWrapper>
@@ -214,20 +250,21 @@ function Marketing() {
         </AllImagesWrapper>
         </AllImagesContainer>
 
-        <BrandContainer>
-        <BrandHeading>SHOP BY BRAND</BrandHeading>
-        <BrandsWrapper>
-        <Carousel>
-           <BrandImage src='/zaraa.svg'/>
-           <BrandImage src='/adidass.svg'/>
-           <BrandImage src='/diorr.svg'/>
-           <BrandImage src='/chanell.svg'/>
-           <BrandImage src='/mangoo.svg'/>
-        </Carousel>
-        </BrandsWrapper>
-        </BrandContainer>
-    </div>
-  )
+
+            <BrandContainer>
+                <BrandHeading>SHOP BY BRAND</BrandHeading>
+                <BrandsWrapper>
+                    <Carousel>
+                        <BrandImage src='/zaraa.svg'/>
+                        <BrandImage src='/adidass.svg'/>
+                        <BrandImage src='/diorr.svg'/>
+                        <BrandImage src='/chanell.svg'/>
+                        <BrandImage src='/mangoo.svg'/>
+                    </Carousel>
+                </BrandsWrapper>
+            </BrandContainer>
+        </div>
+    )
 }
 
 export default Marketing

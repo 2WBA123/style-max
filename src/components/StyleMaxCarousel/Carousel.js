@@ -1,54 +1,47 @@
-import { useState, useEffect, useCallback } from "react";
+import React, {useCallback, useEffect, useState} from "react";
 import useEmblaCarousel from "embla-carousel-react";
-import {
-  CarouselButton,
-  CarouselButtonLeft,
-  CarouselMiniButton,
-  Container,
-  ImagesCounter,
-  Viewport,
-} from "./Carousel.styled";
-import React from "react";
+import {CarouselButton, CarouselButtonLeft, CarouselMiniButton, Container, Viewport,} from "./Carousel.styled";
 
 export const Carousel = ({
-  children,
-  marginBtnTop = "10px",
-  carouselContainerWidth,
-  startIndex,
-  images,
-  selectedIndex,
-  mini = false,
-}) => {
-  const [carouselRef, carousel] = useEmblaCarousel({
-    loop: false,
-    align: "start",
-    startIndex: 0,
-  });
-  const [prevButtonEnabled, setPrevButtonEnabled] = useState(false);
-  const [nextButtonEnabled, setNextButtonEnabled] = useState(false);
-  const [current, setCurrentPage] = useState(1);
+                             children,
+                             marginBtnTop = "10px",
+                             carouselContainerWidth,
+                             startIndex,
+                             images,
+                             selectedIndex,
+                             mini = false,
+                         }) => {
+    const [carouselRef, carousel] = useEmblaCarousel({
+        loop: false,
+        align: "start",
+        startIndex: 0,
+    });
+    const [prevButtonEnabled, setPrevButtonEnabled] = useState(false);
+    const [nextButtonEnabled, setNextButtonEnabled] = useState(false);
+    const [current, setCurrentPage] = useState(1);
 
-  const scrollPrev = useCallback(() => carousel.scrollPrev(), [carousel]);
-  const scrollNext = useCallback(() => carousel.scrollNext(), [carousel]);
-  useEffect(() => {
-    const onSelect = () => {
-      setPrevButtonEnabled(carousel?.canScrollPrev());
-      setNextButtonEnabled(carousel?.canScrollNext());
-      setCurrentPage(carousel?.selectedScrollSnap());
-      if (selectedIndex && carousel?.selectedScrollSnap() + 1) {
-        selectedIndex(carousel.selectedScrollSnap());
-      }
-    };
+    const scrollPrev = useCallback(() => carousel.scrollPrev(), [carousel]);
+    const scrollNext = useCallback(() => carousel.scrollNext(), [carousel]);
+    useEffect(() => {
+        const onSelect = () => {
+            setPrevButtonEnabled(carousel?.canScrollPrev());
+            setNextButtonEnabled(carousel?.canScrollNext());
+            setCurrentPage(carousel?.selectedScrollSnap());
+            if (selectedIndex && carousel?.selectedScrollSnap() + 1) {
+                selectedIndex(carousel.selectedScrollSnap());
+            }
+        };
 
-    if (carousel) {
-      carousel.on("select", onSelect);
-      onSelect();
-    }
-    if (!carousel) return;
-    carousel.reInit();
-  }, [carousel, startIndex, images, selectedIndex]);
+        if (carousel) {
+            carousel.on("select", onSelect);
+            onSelect();
+        }
+        if (!carousel) return;
+        carousel.reInit();
+    }, [carousel, startIndex, images, selectedIndex]);
 
-  // if (!isArray(children)) return ;
+    // if (!isArray(children)) return ;
+
 
   return (
     <div
@@ -181,4 +174,3 @@ export const Carousel = ({
       )}
     </div>
   );
-};
