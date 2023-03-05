@@ -54,12 +54,14 @@ export const Carousel = ({
     <div
       style={{
         display: "flex",
-        maxWidth: "100%",
-        minWidth: "100%",
-        gap: "45px",
+        // maxWidth: "100%",
+        // minWidth: "100%",
+        // gap: "45px",
         margin:"auto",
         flexDirection: "row",
-        
+        // marginBottom:"55px",
+        backgroundColor:"#fafafa",
+        borderRadius:"8px"  
         // marginBottom:"55px",
       }}
     >
@@ -89,7 +91,12 @@ export const Carousel = ({
           onClick={scrollPrev}
           enabled={prevButtonEnabled}
           marginBtnTop={marginBtnTop}
-          style={{transform:"rotate(180deg)"}}
+          style={{transform:"rotate(180deg)",
+          // position: "relative",
+          // bottom: "49%",
+          // left: "5%",
+          // zIndex:1
+          }}
         >
           <svg
             width="52"
@@ -149,6 +156,10 @@ export const Carousel = ({
           onClick={scrollNext}
           enabled={nextButtonEnabled}
           marginBtnTop={marginBtnTop}
+          // style={{
+          //   position: "relative",
+          //   bottom: "49%",
+          //   right: "5%",}}
         >
           <svg
             width="52"

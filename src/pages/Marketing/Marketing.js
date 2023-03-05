@@ -6,7 +6,8 @@ import { AllImagesContainer, AllImagesHeading, BestCardHeading, BestCardPriceWra
 
 function Marketing() {
   return (
-    <div style={{display:"flex",gap:"25px",width:"80%",margin:"auto",flexDirection:"column"}}>
+    <div style={{display:"flex",gap:"60px",width:"80%",margin:"auto",flexDirection:"column"}}>
+
       <CategoryCarouselSection>
       <CategoryCarouselHeading>SHOP BY CATEGORY</CategoryCarouselHeading>
         <Carousel >
@@ -92,7 +93,7 @@ function Marketing() {
       </BestSellersWrapper>
 
 
-        <ShopPriceWrapper>
+      <ShopPriceWrapper>
           <ShopPriceHeading>SHOP BY PRICE</ShopPriceHeading>
           <ShopContentWrapper>
            <SelectWrapper>
@@ -109,10 +110,9 @@ function Marketing() {
            </SelectWrapper>
            <ShopPriceButton><ButtonText>Shop Now</ButtonText><ShopPriceButtonIcon src='IconStrokeRight.svg'/></ShopPriceButton>
           </ShopContentWrapper>
-        </ShopPriceWrapper>
+      </ShopPriceWrapper>
 
-
-        <BestSellersWrapper>
+      <BestSellersWrapper>
         <BestSellersHeading>NEW ARRIVALS</BestSellersHeading>
         <Carousel >
           <BestCardWrapper>
@@ -155,8 +155,38 @@ function Marketing() {
               <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
             </BestCardPriceWrapper>    
           </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>
+          <BestCardWrapper>
+            <BestImage src='/jacket.svg' />
+            <BestCardHeading>ADIDAS</BestCardHeading>
+            <BestCardTypeText>Sweatshirt Dress</BestCardTypeText>
+            <BestCardSizeText>Size: XL</BestCardSizeText>
+            <BestCardPriceWrapper>
+              <BestCardTypeNewPrice>$240</BestCardTypeNewPrice>
+              <BestCardTypeOldPrice>$400</BestCardTypeOldPrice>  
+            </BestCardPriceWrapper>    
+          </BestCardWrapper>  
         </Carousel>
-        </BestSellersWrapper>
+      </BestSellersWrapper>
 
         <AllImagesContainer>
         <AllImagesHeading>SHOP BY STYLE</AllImagesHeading>
@@ -180,7 +210,7 @@ function Marketing() {
             <CategoryImages src='/cultural.svg'/>
             <ImageHeading>CULTURAL</ImageHeading>
             <ImageButton>SEE COLLECTION</ImageButton>
-          </CategoryImagesWrapper>
+          </CategoryImagesWrapper> 
         </AllImagesWrapper>
         </AllImagesContainer>
 
