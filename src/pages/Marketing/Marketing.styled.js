@@ -5,32 +5,29 @@ export const MessageWrapper = styled.div`
   flex-direction: row-reverse;
   justify-content: center;
   flex-wrap: wrap;
-  @media (max-width: 1024px) {
-    flex-direction: column-reverse;
-  }
+//   @media (max-width: 1024px) {
+//     flex-direction: column-reverse;
+//   }
 `;
 
 export const Message = styled.div`
-
-
     background-color:#F1F1F1;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    width:60%;
+    width:53%;
     gap:25px;
     padding:20px 50px;
     border-radius:8px;
 `;
 
 export const MessageImageWrapper = styled.div`
-    width:auto;    
+    width:40%;    
     min-height: 100%;
 `;
 
 export const MessageImage = styled.img` 
     min-height:100%;
-
 `;
 
 export const MessageHeading = styled.div`
